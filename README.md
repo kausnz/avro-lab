@@ -142,11 +142,9 @@ Let's look at the pom.xml file once again
 </plugin>
 			
 ```
-Notice the sourceDirectory and outputDirectory locations defiled in the configuration section of the avro-maven-plugin
+Notice the sourceDirectory and outputDirectory locations defined in the configuration section of the avro-maven-plugin.
 
-The following command in maven lifecycle phase will do the trick and put the generated classes in our outputDirectory: 
-
-spring-kafka-registry\target\generated\avro\
+The following command in maven lifecycle phase will do the trick and put the generated classes in our outputDirectory: spring-kafka-registry\target\generated\avro\
 
 ```
 mvn generate-sources
